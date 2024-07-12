@@ -19,6 +19,7 @@ import orcl from './datasets/orcl'
 import tsla from './datasets/tsla'
 //libraries
 import React, { useState } from 'react';
+
 //components
 import Chart from './components/Chart';
 
@@ -58,7 +59,8 @@ function App() {
  
 
      <input 
-     type= 'text' 
+     className='search_bar'
+     type= 'search' 
      placeholder='Search top 10 US companies' 
      name = 'search'
      value={inputValue} 
