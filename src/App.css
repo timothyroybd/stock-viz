@@ -1,18 +1,26 @@
-body{
-    
+/* ================= 
+    General
+================*/
+*{
+    padding: 0;
+    margin: 0;
 }
+:root {
+    --search-bar-width: 1200px;
+}
+
 
 .suggestion-list {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 5px 0 0 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     position: absolute;
     z-index: 1000;
     background: white;
-    width: 200px;
-    /* Adjust width as needed */
+    width: calc(var(--search-bar-width)  - 30px) ;
+  
 }
 
 .suggestion-list li {
@@ -23,17 +31,16 @@ body{
 .suggestion-list li:hover {
     background-color: #f0f0f0;
 }
-.App {
-   
-}
+
 .search_bar {
-    width: 700px;
+    width: var(--search-bar-width);
  margin-top: 20px;
 padding: 15px 0;
- text-align: center;
+
  font-size: 1.3rem;
  border: 1px ridge rgb(0, 0, 0);
  border-radius: 50px;
+ 
 }
 
 /* Center the placeholder text */
