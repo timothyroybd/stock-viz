@@ -5,12 +5,24 @@
     padding: 0;
     margin: 0;
 }
+.App {
+    margin-top: 50px;
+}
+body {
+    text-align: center;
+}
 :root {
-    --search-bar-width: 1200px;
+    --search-bar-width-1500: 1000px;
+}
+
+.suggestion_containers {
+   margin-left: 140px;
+  
 }
 
 
 .suggestion-list {
+    text-align: center;
     list-style-type: none;
     padding: 10px;
     margin: 5px 0 0 10px;
@@ -19,7 +31,7 @@
     position: absolute;
     z-index: 1000;
     background: white;
-    width: calc(var(--search-bar-width)  - 30px) ;
+    width: calc(var(--search-bar-width-1500)  - 70px) ;
   
 }
 
@@ -33,14 +45,19 @@
 }
 
 .search_bar {
-    width: var(--search-bar-width);
+    width: var(--search-bar-width-1500);
  margin-top: 20px;
 padding: 15px 0;
-
+text-align: center;
  font-size: 1.3rem;
  border: 1px ridge rgb(0, 0, 0);
  border-radius: 50px;
  
+}
+.search_bar::-webkit-search-cancel-button {
+   
+-webkit-appearance: none;
+    appearance: none;
 }
 
 /* Center the placeholder text */
@@ -69,4 +86,12 @@ input:focus::placeholder {
 
 :-ms-input-placeholder {
     text-align: center;
+}
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
 }

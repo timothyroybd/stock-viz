@@ -19,7 +19,8 @@ function Chart({ stock_data, ticker }) {
   };
 
   return (
-    <>    <LineChart
+      <div className='chart'>
+      <LineChart
       width={600}
       height={300}
       data={stock_data}
@@ -38,8 +39,8 @@ function Chart({ stock_data, ticker }) {
 
     <div>{ticker.toUpperCase()}</div>
 
-
-    </>
+</div>
+  
 
     
   );

@@ -18,7 +18,7 @@ import nvda from './datasets/nvda';
 import orcl from './datasets/orcl';
 import tsla from './datasets/tsla';
 //libraries
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 
 
 
@@ -84,10 +84,12 @@ const handleBlur = () => {
 
   return (
     <div className="App">
+      <div className='search_container'>
+      <h1> Top 10 Tech Companies</h1>
       <input
         className="search_bar"
         type="search"
-        placeholder="Search top 10 US companies"
+        placeholder="..."
         name="search"
         value={inputValue}
         onChange={(e) =>
@@ -99,7 +101,7 @@ const handleBlur = () => {
          onFocus={handleFocus}
   onBlur={handleBlur}
       />
-
+<div className='suggestion_containers'> 
       {suggestion.length > 0 && (
         <ul className="suggestion-list">
           {suggestion.map((symbol) => (
@@ -120,7 +122,12 @@ const handleBlur = () => {
           ))}
         </ul>
       )}
+      </div>
+
       {data.length > 0 && <Chart stock_data={data} ticker = {tickerSelection} />}
+
+      </div>
+      
     </div>
   );
 }
