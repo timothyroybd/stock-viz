@@ -46,6 +46,14 @@ body {
 .stock_drop_down select option {
     color: #333;
 }
+/* ================= 
+   Icon
+================*/
+.stock_icon {
+    font-size: 12rem;
+    margin-top: 100px;
+    color: #28594373
+}
 
 /* ================= 
    Chart
@@ -60,6 +68,20 @@ body {
    
 
 }
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+}
+.img-container img {
+    width: 250px;
+}
+
+
 
 /* ================= 
    Footer
