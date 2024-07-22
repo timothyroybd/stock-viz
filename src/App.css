@@ -4,6 +4,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .App {
     margin-top: 50px;
@@ -12,86 +13,64 @@ body {
     text-align: center;
 }
 :root {
-    --search-bar-width-1500: 1000px;
+    --main-color: #285943;
 }
 
-.suggestion_containers {
-   margin-left: 140px;
-  
-}
-
-
-.suggestion-list {
-    text-align: center;
-    list-style-type: none;
-    padding: 10px;
-    margin: 5px 0 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    position: absolute;
-    z-index: 1000;
-    background: white;
-    width: calc(var(--search-bar-width-1500)  - 70px) ;
-  
-}
-
-.suggestion-list li {
-    padding: 8px;
-    cursor: pointer;
-}
-
-.suggestion-list li:hover {
-    background-color: #f0f0f0;
-}
-
-.search_bar {
-    width: var(--search-bar-width-1500);
- margin-top: 20px;
-padding: 15px 0;
-text-align: center;
- font-size: 1.3rem;
- border: 1px ridge rgb(0, 0, 0);
- border-radius: 50px;
- 
-}
-.search_bar::-webkit-search-cancel-button {
-   
--webkit-appearance: none;
-    appearance: none;
-}
-
-/* Center the placeholder text */
-input::placeholder {
-    text-align: center;
-    font-size: 1.35rem;
- 
-}
-
-input:focus::placeholder {
-    color: transparent;
-}
-
-/* For legacy browsers */
-::-webkit-input-placeholder {
+/* ================= 
+    header
+================*/
+.App h1 {
+    font-size: 2.5rem;
+    margin-top: 60px;
+   }
+.stock_drop_down {
+    margin-top: 60px;
     text-align: center;
 }
-
-:-moz-placeholder {
+.stock_drop_down select {
+    width: 700px;
     text-align: center;
+    border: 2px ridge rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+        /* Remove default outline */
+        cursor: pointer;
+        /* Pointer cursor for better UX */
+        color: #333;
+}
+.stock_drop_down select {
+    font-size: 1.3rem;
+}
+.stock_drop_down select option {
+    color: #333;
 }
 
-::-moz-placeholder {
-    text-align: center;
-}
-
-:-ms-input-placeholder {
-    text-align: center;
-}
+/* ================= 
+   Chart
+================*/
 .chart {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: -45px;
+   
 
+}
+
+/* ================= 
+   Footer
+================*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+   /* border-top: 1px solid var(--main-color); */
+    padding: 50px 0;
+    background-color: rgb(185, 225, 185);
+    
 }

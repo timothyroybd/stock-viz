@@ -21,12 +21,12 @@ function Chart({ stock_data, ticker }) {
   return (
       <div className='chart'>
       <LineChart
-      width={600}
-      height={300}
+      width={650}
+      height={330}
       data={stock_data}
-      margin={{ top: 20, right: 30, bottom: 20, left: 20 }}
+      // margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
     >
-      <Line type="monotone" dataKey="close" stroke="#8884d8" dot={false} />
+      <Line type="monotone" dataKey="close" stroke="#285943" dot={false} />
 
       <XAxis dataKey="timestamp" tickFormatter={formatXAxis}>
         <Label value={ticker.toUpperCase()} position="insideTop" offset={50} />

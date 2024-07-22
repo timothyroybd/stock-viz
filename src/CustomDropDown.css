@@ -1,0 +1,46 @@
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 700px;
+    /* Adjust width as needed */
+}
+
+.dropdown-selected {
+    background: rgba(255, 255, 255, 0.3);
+    /* Semi-transparent background */
+    border: 2px ridge rgba(0, 0, 0, 0.2);
+    /* Transparent border */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.815);
+    /* Semi-transparent background */
+    border: 2px ridge rgba(0, 0, 0, 0.2);
+    /* Transparent border */
+    border-radius: 4px;
+    width: 100%;
+    z-index: 99;
+    /* Ensure dropdown is above other content */
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+    /* Text color */
+}
+
+.dropdown-item:hover {
+    background: #2859434e;
+    /* Light hover effect */
+}
