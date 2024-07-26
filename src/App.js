@@ -55,7 +55,7 @@ function App() {
         )
       ) : (
         <div className="img-container">
-            <img src = {img } />
+             <img src = {img } /> 
           </div>
       )}
 
